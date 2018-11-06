@@ -1,4 +1,4 @@
 Problem link: </br>
-https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem
+https://www.hackerrank.com/challenges/dynamic-programming-classics-the-longest-common-subsequence/problem
 
-Martrix filled with 0 and 1, only consider cells with 1. Cells are connected if they are adjacent to each other horizontally, vertically, or diagonally. Cells connected to each other create a region. Find the maximum number of cells in one region. Some problems also ask to find how many regions the matrix has.
+Given two sequences integers (also works for strings), find the longest common subsequence and print it as a line of space-separated integers. If there are multiple common subsequences with the same maximum length, print any one of them.
