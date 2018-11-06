@@ -45,13 +45,15 @@ def countRegion(matrix):
 def DFS2(ro, col, matrix, row, column):
     if ro < 0 or col < 0 or ro > row - 1 or col > column - 1:
         return
-    if matrix[ro][col] == 1:
-        matrix[ro][col] = 2
-        DFS2(ro - 1, col - 1, matrix, row, column)
-        DFS2(ro, col - 1, matrix, row, column)
-        DFS2(ro + 1, col - 1, matrix, row, column)
-        DFS2(ro - 1, col, matrix, row, column)
-        DFS2(ro + 1, col, matrix, row, column)
-        DFS2(ro - 1, col + 1, matrix, row, column)
-        DFS2(ro, col + 1, matrix, row, column)
-        DFS2(ro + 1, col + 1, matrix, row, column)
+    if matrix[ro][col] != 1:
+        return
+
+    matrix[ro][col] = 2
+    DFS2(ro - 1, col - 1, matrix, row, column)
+    DFS2(ro, col - 1, matrix, row, column)
+    DFS2(ro + 1, col - 1, matrix, row, column)
+    DFS2(ro - 1, col, matrix, row, column)
+    DFS2(ro + 1, col, matrix, row, column)
+    DFS2(ro - 1, col + 1, matrix, row, column)
+    DFS2(ro, col + 1, matrix, row, column)
+    DFS2(ro + 1, col + 1, matrix, row, column)
