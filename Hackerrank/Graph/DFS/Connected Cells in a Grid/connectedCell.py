@@ -1,4 +1,4 @@
-# connectedCell and DFS is to find the maximum num of cells in a region
+# connectedCell and DFS are to find the maximum num of cells in a region
 
 def connectedCell(matrix):
     row = len(matrix)
