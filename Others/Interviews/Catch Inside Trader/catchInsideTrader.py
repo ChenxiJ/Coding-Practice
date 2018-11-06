@@ -42,5 +42,4 @@ def findPotentialInsiderTraders(datafeed):
                 if a > 500000:
                     flaggedTrades.add(dayAndTrade)
     flaggedTrades = sorted(list(flaggedTrades))
-
     return  list(map(lambda x: str(x[0]) + "|" + str(x[1]), flaggedTrades))
