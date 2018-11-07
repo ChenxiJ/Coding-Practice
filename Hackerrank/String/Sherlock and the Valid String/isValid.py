@@ -1,3 +1,5 @@
+# two cases, one is everything appears n times, one char n+1 times
+# the other is everything appears n times, only one char appears 1 time
 def isValid(s):
     mapp = {}
     for i in s:
