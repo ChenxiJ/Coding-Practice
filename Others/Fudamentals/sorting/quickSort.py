@@ -1,5 +1,5 @@
 # quick sort, here last element as pivot
-# worst case: O(n ** 2), when always pick the greatest or the smallest element as pivot
+# worst case: O(n^2), when always pick the greatest or the smallest element as pivot
 # best case: O(n log n), pivot always the middle one
 # prefer over merge sort for arrays for it doesn't require extra O(N) storage
 def partition(arr, low, high):
