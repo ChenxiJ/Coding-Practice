@@ -1,35 +1,34 @@
 class Node:
-    def __init__(self, info): 
-        self.info = info  
+    def __init__(self, val): 
+        self.val = val  
         self.left = None  
         self.right = None 
-        self.level = None 
 
     def __str__(self):
-        return str(self.info) 
+        return str(self.val) 
 
 class BinarySearchTree:
     def __init__(self): 
         self.root = None
 
-    def create(self, val):  
+    def create(self, value):  
         if self.root == None:
-            self.root = Node(val)
+            self.root = Node(value)
         else:
             current = self.root
          
             while True:
-                if val < current.info:
+                if val < current.val:
                     if current.left:
                         current = current.left
                     else:
-                        current.left = Node(val)
+                        current.left = Node(value)
                         break
-                elif val > current.info:
+                elif val > current.val:
                     if current.right:
                         current = current.right
                     else:
-                        current.right = Node(val)
+                        current.right = Node(value)
                         break
                 else:
                     break
