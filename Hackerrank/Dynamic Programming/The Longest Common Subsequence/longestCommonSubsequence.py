@@ -1,6 +1,6 @@
-# Finding the common subsequenceit by backtracking exactly how the dp is built. From the last entry of dp, if row and column equals,
+# Finding the common subsequence by backtracking exactly how the dp is built. From the last entry of dp, if row and column equals,
 # then this value comes from its upper left cell + 1; if not, this value is from the bigger one of either its left or upper cell.
-# Stick to one direction, for example left, then only when its upper cell is GREATER than its left cell, move up (if equal, moves left), 
+# Stick to one direction, for example left, then only when its upper cell is GREATER than its left cell, move up (if equal, move left), 
 # otherwise move left.
 
 # about dp initialization, putting extra row and column of 0 before the real matrix extremely helpful!!
