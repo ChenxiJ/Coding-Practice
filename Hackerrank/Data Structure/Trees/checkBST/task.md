@@ -5,3 +5,5 @@ We define a binary tree to be a binary search tree with the following ordering r
 Given the root node of a binary tree, can you determine if it's also a binary search tree?
 
 Complete the function which has 1 parameter: a pointer to the root of a binary tree. It must return a boolean denoting whether or not the binary tree is a binary search tree. You may have to write one or more helper functions to complete this challenge.
+
+link: https://www.hackerrank.com/challenges/is-binary-search-tree/problem
